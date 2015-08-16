@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:b='urn:import:org.gwtbootstrap3.client.ui'>
+
+    <g:HTMLPanel>
+        <div style="margin: auto; width: 60%;">
+            <b:PageHeader subText="" ui:field="pageTitle"/>
+            <g:SimplePanel ui:field="gridPanel"/>
+
+            <g:HTMLPanel ui:field="progressBarPanel">
+                <div style="padding-right: 15px; padding-left: 15px;">
+                    <g:Label>Progression :</g:Label>
+                    <b:Progress>
+                        <b:ProgressBar ui:field="studentProgressBar" percent="0"/>
+                    </b:Progress>
+                    <b:Progress>
+                        <b:ProgressBar ui:field="classProgressBar" percent="0"/>
+                    </b:Progress>
+                </div>
+            </g:HTMLPanel>
+
+            <g:HTMLPanel ui:field="cumulativeChartPanel"/>
+            <g:HTMLPanel ui:field="evaluationChartPanel"/>
+        </div>
+    </g:HTMLPanel>
+
+</ui:UiBinder>
